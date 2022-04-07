@@ -1,0 +1,20 @@
+// Copyright (c) 2022 Emmanuel-Fofeyin All rights reserved
+//
+// Created by: Emmanuel.Fofeyin
+// Created on: April 2022
+// This file contains the JS functions for index.html
+
+'use strict'
+/**
+ * This function calculates volume of Sphere.
+ */
+function calculate () {
+  // input
+  const r = parseInt(document.getElementById('r').value)
+
+  // process
+  const volume = (4 / 3 * 3.14 * r³)
+
+  // output
+  document.getElementById('area').innerHTML = 'The volume is: ' + volume.toFixed(2) + ' mm³'
+}
