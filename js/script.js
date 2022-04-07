@@ -13,7 +13,7 @@ function calculate () {
   const r = parseInt(document.getElementById('r').value)
 
   // process
-  const volume = (4 / 3 * 3.14 * r * r * r)
+  const volume = (4 / 3 * 3.14159265359 * r * r * r)
 
   // output
   document.getElementById('area').innerHTML = 'The volume is: ' + volume.toFixed(2) + ' mm³'
