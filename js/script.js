@@ -10,10 +10,10 @@
  */
 function calculate () {
   // input
-  const r = parseInt(document.getElementById('r').value)
+  const radius = parseInt(document.getElementById('radius').value)
 
   // process
-  const volume = (4 / 3 * 3.14159265359 * r * r * r)
+  const volume = (4 / 3 * Math.PI * radius ** 3)
 
   // output
   document.getElementById('area').innerHTML = 'The volume is: ' + volume.toFixed(2) + ' mm³'
